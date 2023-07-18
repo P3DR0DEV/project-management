@@ -1,11 +1,11 @@
 import express from "express"
 import "dotenv/config"
-import { userController } from "./useCases/user/userController"
+import { userRouter } from "./routes/userRouter"
 
 const app = express()
 
 app.use(express.json())
-app.post("/", userController.create)
+app.use("/user", userRouter)
 
 app.listen(process.env.PORT, () => {
   /* eslint-disable-next-line */
