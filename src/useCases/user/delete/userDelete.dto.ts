@@ -1,10 +1,3 @@
-interface UserDeleteRequestDTO {
-  id: string
-}
+type UserDeleteRequestDTO = string
 
-interface UserDeleteResponseDTO {
-  name: string
-  email: string
-  message: string
-}
-export { UserDeleteRequestDTO, UserDeleteResponseDTO }
+export { UserDeleteRequestDTO }
